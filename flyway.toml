@@ -8,8 +8,7 @@ schemas = [ ]
 displayName = "Development database"
 
 [environments.shadow]
-url = "jdbc:sqlserver://localhost;databaseName=WidgetZShadow;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
-schemas = [ ]
+url = "jdbc:sqlserver://wd-lpt-005:5012;databaseName=WidgetZShadow;encrypt=false;integratedSecurity=true;trustServerCertificate=false"
 displayName = "Shadow database"
 provisioner = "clean"
 
@@ -26,7 +25,6 @@ validateMigrationNaming = true
 defaultSchema = "dbo"
 baselineOnMigrate = true
 baselineVersion = "001_20230703120714"
-
 
 [flywayDesktop]
 developmentEnvironment = "development"
