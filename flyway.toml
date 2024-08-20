@@ -3,8 +3,7 @@ name = "FlywayTrialProject"
 databaseType = "SqlServer"
 
 [environments.development]
-url = "jdbc:sqlserver://localhost;databaseName=WidgetDev;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
-schemas = [ ]
+url = "jdbc:sqlserver://localhost:5012;databaseName=WidgetDev;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
 displayName = "Development database"
 
 [environments.shadow]
